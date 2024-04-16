@@ -7,49 +7,53 @@
     <link rel="stylesheet" href="./portfolio.css" />
   </head>
   <body>
-    <div id="mainDiv">
+    <div class="mainDiv">
       <header>
-        <img
-          src="img/logo.png"
-          alt="이미지 없음"
-          id="header_img"
-          height="1000"
-        />
-        <nav>
-          <ul>
+        <nav class="navbar">
+          <img
+            src="img/logo.png"
+            alt="이미지 없음"
+            class="header_img"
+            height="1000"
+          />
+          <ul class="navbar_menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Tech Slack</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">contact</a></li>
           </ul>
-          <div>
-            <span>
-              <img src="img/git.png" alt="" />
-              <img src="img/tw.png" alt="" />
-              <img src="img/in.png" alt="" />
-            </span>
-          </div>
+          <ul class="navbar_link">
+            <li>
+              <a href="#"><img src="img/git.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/tw.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/in.png" alt="" /></a>
+            </li>
+          </ul>
         </nav>
       </header>
       <main>
-        <div id="main_div_1">
+        <section class="info">
           <p>
             Hi 👋,<br />
             My name is <br />
             <span>Pavan MG</span> <br />
             I build things for web
           </p>
-          <div id="main_img">
+          <div class="info_img">
             <img src="img/me.png" alt="" />
           </div>
-        </div>
-        <div>
-          <div id="main_div_2">
+        </section>
+        <section class="skills_div">
+          <div class="skills_div_text">
             <p>My Tech Stack</p>
             <p>Technologies I’ve been working with recently</p>
           </div>
-          <div id="main_div_2_skills">
+          <div class="skills_div_icon">
             <img src="./img//skills/html.png" alt="" width="50" height="50" />
             <img src="./img//skills/css.png" alt="" width="50" height="50" />
             <img src="./img//skills/js.png" alt="" width="50" height="50" />
@@ -67,7 +71,7 @@
             <img src="./img//skills/vscode.png" alt="" width="50" height="50" />
             <img src="./img//skills/github.png" alt="" width="50" height="50" />
           </div>
-        </div>
+        </section>
         <div>
           <div id="main_div_2">
             <p>Projects</p>
