@@ -5,7 +5,7 @@ body {
   align-items: center;
 }
 #mainDiv {
-  width: 40%;
+  width: 45%;
   padding: 20px 50px;
 }
 
@@ -99,4 +99,56 @@ main {
 }
 #main_div_2_skills img {
   padding: 25px;
+}
+#project_item_Div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project_item {
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+}
+.project_item img {
+  width: 100%;
+  height: 100%;
+}
+
+#project_item_body {
+  padding: 10px;
+}
+
+#project_item_header {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+#project_item_body {
+  font-size: 12px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+#project_item_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+#project_item_footer img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.project_item_footer_item {
+  display: flex;
+  align-items: center;
+}
+.project_item_footer_item:hover {
+  cursor: pointer;
+}
+footer {
+  margin-top: 200px;
 }
