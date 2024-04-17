@@ -5,35 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./portfolio.css" />
+    <script
+      src="https://kit.fontawesome.com/59e310e089.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="mainDiv">
       <header>
         <nav class="navbar">
-          <img
-            src="img/logo.png"
-            alt="이미지 없음"
-            class="header_img"
-            height="1000"
-          />
-          <ul class="navbar_menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Tech Slack</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-          <ul class="navbar_link">
-            <li>
-              <a href="#"><img src="img/git.png" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="img/tw.png" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="img/in.png" alt="" /></a>
-            </li>
-          </ul>
+          <div>
+            <img
+              src="img/logo.png"
+              alt="이미지 없음"
+              class="header_img"
+              height="1000"
+            />
+          </div>
+          <div class="navbar_div">
+            <ul class="navbar_menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Tech Slack</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+            <ul class="navbar_link">
+              <li>
+                <a href="https://github.com/JaeIn1" target="_blank"
+                  ><img src="img/git.png" alt=""
+                /></a>
+              </li>
+              <!--             <li>
+                <a href="#" target="_blank"><img src="img/blog.png" alt="" /></a>
+              </li> -->
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><img src="img/instagram.jpeg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars toggleBtn"></i>
         </nav>
       </header>
       <main>
@@ -41,11 +54,12 @@
           <p>
             Hi 👋,<br />
             My name is <br />
-            <span>Pavan MG</span> <br />
+            <span>Lee JaeIn</span> <br />
             I build things for web
           </p>
           <div class="info_img">
-            <img src="img/me.png" alt="" />
+            <!-- <div class="info_img_item"></div> -->
+            <img src="./img/me.png" alt="" />
           </div>
         </section>
         <section class="skills_div">
@@ -54,40 +68,40 @@
             <p>Technologies I’ve been working with recently</p>
           </div>
           <div class="skills_div_icon">
-            <img src="./img//skills/html.png" alt="" width="50" height="50" />
-            <img src="./img//skills/css.png" alt="" width="50" height="50" />
-            <img src="./img//skills/js.png" alt="" width="50" height="50" />
-            <img src="./img//skills/react.png" alt="" width="50" height="50" />
-            <img src="./img//skills/redux.png" alt="" width="50" height="50" />
+            <img src="./img/skills/html.png" alt="" />
+            <img src="./img/skills/css.png" alt="" />
+            <img src="./img/skills/js.png" alt="" />
+            <img src="./img/skills/react.png" alt="" />
+            <img src="./img/skills/redux.png" alt="" />
             <img
               src="./img//skills/bootstrap.png"
               alt=""
               width="50"
               height="50"
             />
-            <img src="./img//skills/tail.png" alt="" width="50" height="50" />
-            <img src="./img//skills/sccs.png" alt="" width="50" height="50" />
-            <img src="./img//skills/git.png" alt="" width="50" height="50" />
-            <img src="./img//skills/vscode.png" alt="" width="50" height="50" />
-            <img src="./img//skills/github.png" alt="" width="50" height="50" />
+            <img src="./img/skills/tail.png" alt="" />
+            <img src="./img/skills/sccs.png" alt="" />
+            <img src="./img/skills/git.png" alt="" />
+            <img src="./img/skills/vscode.png" alt="" />
+            <img src="./img/skills/github.png" alt="" />
           </div>
         </section>
-        <div>
-          <div id="main_div_2">
+        <section class="project_div">
+          <div class="project_div_text">
             <p>Projects</p>
             <p>Things I’ve built so far</p>
           </div>
-          <article id="project_item_Div">
+          <div class="project_div_item">
             <div class="project_item">
               <div><img src="img/outMeeting.png" alt="이미지 업음" /></div>
-              <div id="project_item_body">
-                <div id="project_item_header">OurMeeting</div>
-                <div id="project_item_body">
+              <div class="project_item_body">
+                <div class="project_item_header">OurMeeting</div>
+                <div class="project_item_body">
                   This is sample project description random things are here in
                   description This is sample project lorem ipsum generator for
                   dummy content
                 </div>
-                <div id="project_item_footer">
+                <div class="project_item_footer">
                   <div class="project_item_footer">
                     <img src="img/git.png" alt="" />
                     <span>view</span>
@@ -101,14 +115,14 @@
             </div>
             <div class="project_item">
               <div><img src="img/outMeeting.png" alt="이미지 업음" /></div>
-              <div id="project_item_body">
-                <div id="project_item_header">OurMeeting</div>
-                <div id="project_item_body">
+              <div class="project_item_body">
+                <div class="project_item_header">OurMeeting</div>
+                <div class="project_item_body">
                   This is sample project description random things are here in
                   description This is sample project lorem ipsum generator for
                   dummy content
                 </div>
-                <div id="project_item_footer">
+                <div class="project_item_footer">
                   <div class="project_item_footer">
                     <img src="img/git.png" alt="" />
                     <span>view</span>
@@ -122,14 +136,14 @@
             </div>
             <div class="project_item">
               <div><img src="img/outMeeting.png" alt="이미지 업음" /></div>
-              <div id="project_item_body">
-                <div id="project_item_header">OurMeeting</div>
-                <div id="project_item_body">
+              <div class="project_item_body">
+                <div class="project_item_header">OurMeeting</div>
+                <div class="project_item_body">
                   This is sample project description random things are here in
                   description This is sample project lorem ipsum generator for
                   dummy content
                 </div>
-                <div id="project_item_footer">
+                <div class="project_item_footer">
                   <div class="project_item_footer">
                     <img src="img/git.png" alt="" />
                     <span>view</span>
@@ -143,14 +157,14 @@
             </div>
             <div class="project_item">
               <div><img src="img/outMeeting.png" alt="이미지 업음" /></div>
-              <div id="project_item_body">
-                <div id="project_item_header">OurMeeting</div>
-                <div id="project_item_body">
+              <div class="project_item_body">
+                <div class="project_item_header">OurMeeting</div>
+                <div class="project_item_body">
                   This is sample project description random things are here in
                   description This is sample project lorem ipsum generator for
                   dummy content
                 </div>
-                <div id="project_item_footer">
+                <div class="project_item_footer">
                   <div class="project_item_footer">
                     <img src="img/git.png" alt="" />
                     <span>view</span>
@@ -162,27 +176,72 @@
                 </div>
               </div>
             </div>
-          </article>
-        </div>
+            <div class="project_item">
+              <div><img src="img/outMeeting.png" alt="이미지 업음" /></div>
+              <div class="project_item_body">
+                <div class="project_item_header">OurMeeting</div>
+                <div class="project_item_body">
+                  This is sample project description random things are here in
+                  description This is sample project lorem ipsum generator for
+                  dummy content
+                </div>
+                <div class="project_item_footer">
+                  <div class="project_item_footer">
+                    <img src="img/git.png" alt="" />
+                    <span>view</span>
+                  </div>
+                  <div class="project_item_footer_item">
+                    <img src="img/git.png" alt="" />
+                    <span>github</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project_item">
+              <div><img src="img/outMeeting.png" alt="이미지 업음" /></div>
+              <div class="project_item_body">
+                <div class="project_item_header">OurMeeting</div>
+                <div class="project_item_body">
+                  This is sample project description random things are here in
+                  description This is sample project lorem ipsum generator for
+                  dummy content
+                </div>
+                <div class="project_item_footer">
+                  <div class="project_item_footer">
+                    <img src="img/git.png" alt="" />
+                    <span>view</span>
+                  </div>
+                  <div class="project_item_footer_item">
+                    <img src="img/git.png" alt="" />
+                    <span>github</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
-        <div>
-          <div>
-            <img src="img/footer.png" alt="" />
-          </div>
-          <div>
-            <span>01023090094</span>
-            <span>ysy06053@gmail.com</span>
-          </div>
-          <div>
-            <span>
-              <img src="img/git.png" alt="" />
-              <img src="img/tw.png" alt="" />
-              <img src="img/in.png" alt="" />
-            </span>
+        <div class="footer_div">
+          <img src="img/footer.png" alt="" class="footer_img" />
+          <div class="footer_div_info">
+            <div class="footer_email">
+              <span>82+ 01023090094</span>
+              <span>ysy06053@gmail.com</span>
+            </div>
+            <div class="footer_link">
+              <a href="https://github.com/JaeIn1" target="_blank"
+                ><img src="img/git.png" alt="" class="footer_link_img"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img src="img/instagram.jpeg" alt="" class="footer_link_img"
+              /></a>
+            </div>
           </div>
         </div>
       </footer>
+      <hr class="footer_line" />
     </div>
   </body>
+  <script src="./portfolio.js"></script>
 </html>
