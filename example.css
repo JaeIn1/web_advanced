@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#title {
+} /* ID 선택자 */
+#title {
+  text-decoration: underline;
+  font-weight: bold;
+}
+/* 클래스 선택자 */
+.description {
+  color: grey;
+}
+/* 태그 선택자 */
+p {
+  font-style: italic;
+}
+/* 자식 선택자 */
+div p {
+  color: red;
+}
+.testDiv {
+  padding: 10px;
+  background-color: yellow;
+  border: 10px solid red;
+  margin: 10px;
+}

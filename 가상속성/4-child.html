@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>child</title>
+    <link rel="stylesheet" href="./common.css" />
+
+    <style>
+      .holiday:first-child {
+        color: red;
+      }
+
+      .holiday:first-letter {
+        font-size: 40px;
+      }
+
+      .please:first-line {
+        color: green;
+      }
+
+      .holiday:first-child::before {
+        content: "🎯";
+      }
+
+      .holiday:nth-child(3) {
+        content: "이에요";
+        color: rgb(0, 162, 255);
+      }
+
+      .holiday:last-child {
+        content: "이에요";
+        color: red;
+      }
+
+      .holiday:last-child::after {
+        content: "이말이에요";
+        color: rgb(0, 162, 255);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>[nth-child]</div>
+    <div>
+      <div class="holiday">5월은 빨간날이 많다</div>
+      <div class="holiday">5월 1일</div>
+      <div class="holiday">5월 6일</div>
+      <div class="holiday">5월 15일</div>
+      <div class="holiday">5월 15일</div>
+      <div class="holiday">더 많았으면 좋겠다.</div>
+      <div class="please">
+        쉬는 날은 좋은 게 더 많다 우리는 주4일제로 나아가야한다. 라고
+        생각한다고. 말하고 싶다.
+      </div>
+    </div>
+  </body>
+</html>
