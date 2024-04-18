@@ -216,6 +216,7 @@ footer {
   margin-top: 100px;
 }
 .footer_div {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -246,6 +247,17 @@ footer {
 }
 .footer_line {
   margin-top: 30px;
+}
+.footer_end_text {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_end_text_name {
+  background: linear-gradient(to right, #13b0f5, #e70faa);
+  -webkit-background-clip: text; /* 텍스트만 그라디언트 적용 */
+  -webkit-text-fill-color: transparent; /* 텍스트 색상을 투명하게 설정 */
 }
 .toggleBtn {
   visibility: hidden;
@@ -324,5 +336,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .footer_end_text {
+    display: none;
   }
 }
