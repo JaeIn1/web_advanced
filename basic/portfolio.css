@@ -5,16 +5,18 @@
 }
 body {
   width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0px auto;
+  padding: 10px 50px;
+  max-width: 900px;
 }
-.mainDiv {
+/* .mainDiv {
   width: 800px;
   padding: 20px 50px;
-}
+} */
 .navbar_div {
+  width: 100%;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -233,7 +235,11 @@ footer {
   width: 30px;
   height: 30px;
 }
-.footer_email span {
+.footer_email a {
+  list-style: none;
+  text-decoration: none;
+}
+.footer_email a span {
   font-size: 15px;
   margin-right: 20px;
   color: #666666;
@@ -290,6 +296,13 @@ footer {
   .toggleBtn:hover {
     cursor: pointer;
   }
+  .footer_email {
+    display: flex;
+  }
+  .footer_email a {
+    text-decoration: none;
+    list-style: none;
+  }
   .footer_email span {
     font-size: 12px;
     margin-right: 20px;
@@ -298,6 +311,10 @@ footer {
   .footer_img {
     width: 60px;
     height: 40px;
+  }
+  .footer_email {
+    display: flex;
+    flex-direction: column;
   }
 }
 
