@@ -12,7 +12,6 @@ jobs:
     steps:
       - name: checkout v2
         uses: actions/checkout@v2
-
       - name: Deploy To s3
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -23,3 +22,9 @@ jobs:
             --recursive \
             --region ap-northeast-2 \
             ./basic/ s3://my-portfolio-jaein
+      - name: Invalidate CloudFront Distribution
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ap-northeast-2
+        run: aws cloudfront create-invalidation --distribution-id EAQZOBDYJDWGZ --paths "/*"
