@@ -121,10 +121,27 @@ main {
   color: #42446e;
   text-align: left;
 }
-.info p span {
+.info_text {
   background: linear-gradient(to right, #13b0f5, #e70faa);
   -webkit-background-clip: text; /* 텍스트만 그라디언트 적용 */
   -webkit-text-fill-color: transparent; /* 텍스트 색상을 투명하게 설정 */
+}
+.info_hand_icon {
+  display: inline-block;
+  font-size: 2.5rem;
+  transform: rotate(10deg);
+  animation: wave 2s infinite;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
 }
 
 .info_img_item {
@@ -341,7 +358,17 @@ footer {
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
+    animation: nav 1s;
   }
+  @keyframes nav {
+    from {
+      opacity: 0; /* 시작할 때 투명도 0 */
+    }
+    to {
+      opacity: 1; /* 끝날 때 투명도 1 (나타남) */
+    }
+  }
+
   .navbar_menu {
     position: relative;
     width: 100%;
