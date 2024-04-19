@@ -417,12 +417,6 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-  .info {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
   .footer_end_text {
     display: none;
   }
@@ -438,5 +432,8 @@ footer {
   }
   body {
     padding: 10px 20px;
+  }
+  .skills_div_icon {
+    gap: 20px;
   }
 }
