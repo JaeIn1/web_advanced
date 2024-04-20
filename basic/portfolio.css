@@ -19,7 +19,11 @@ body {
   font-family: "KCC-Hanbit";
 }
 body.darkmode {
-  background: linear-gradient(to bottom right, #333333, #1a1a1a);
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
   color: white;
 }
 .navbar_div {
