@@ -348,12 +348,6 @@ footer {
   cursor: pointer;
   font-size: 2rem;
 }
-.dark-icon {
-  display: inline;
-}
-.light-icon {
-  display: none;
-}
 .dark-icon:hover {
   color: gold;
 }
